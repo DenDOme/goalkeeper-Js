@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- style="display: none;" -->
+    <section id="startpage">
+        <div class="container">
+            <div class="start__wrapper">
+                <h1 class="start__title">GOOOL</h1>
+                <div class="start__inputs">
+                    <p id="error" class="error"></p>
+                    <input id="userName" type="text" placeholder="Name">
+                    <button id="userBtn" onclick="checkName()">START</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gamepage">
+        <div class="game__top">
+            <div class="game__user">Username : <span id="user__name"></span></div>
+            <div class="game__time">Time : <span id="user__time">10:03</span></div>
+            <div class="game__score"><span id="user__score">0</span> : Score</div>
+        </div>
+        <div class="game__bot">
+            <div class="game__canvas">
+                <div class="choose__left choose">
+                    <div class="game__choose" id="1"></div>
+                    <div class="game__choose" id="2"></div>
+                </div>
+                <div class="game__choose choose__middle" id="3"></div>
+                <div class="choose__right choose">
+                    <div class="game__choose" id="4"></div>
+                    <div class="game__choose" id="5"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="end__page">
+        <div class="end__wrapper">
+            <h2 class="end__title">GAME OVER</h2>
+            <div class="end__disp">Username : <span class="end__user"></span></div>
+            <div class="end__disp">Score : <span class="end__score"></span></div>
+        </div>
+    </section>
+    <script src="js.js"></script>
+</body>
+</html>
